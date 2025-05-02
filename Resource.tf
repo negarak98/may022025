@@ -1,5 +1,4 @@
-Resource
-"azurerm_resource_group"
+resource "azurerm_resource_group"
 "terraformjune022025"{
   name  =
   "mcit_resource_group_june022025"
