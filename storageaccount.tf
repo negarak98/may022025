@@ -1,4 +1,4 @@
-recource "azurerm_storage_account" "mcitstoragemay" {
+resource "azurerm_storage_account" "mcitstoragemay" {
   name                     = var.storage_account_name
   resource_group_name      = azurerm_resource_group.may022025.name
   location                 = azurerm_resource_group.may022025.location
