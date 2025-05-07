@@ -18,4 +18,6 @@ output "total_output"{
 output "characters"{
   value=[for sport in local.characters:sport]
 }
-  
+  output "bestrestaurents"{
+   value=[for food in local.bestrestaurants:food]
+}
