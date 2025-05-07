@@ -1,2 +1,5 @@
   recource "azurerm_storage_container" "mcitcontainermay"  {
-  name                                = "
+  name                                = "content"
+  storage_account_id                  = azurerm_storage_account.example.id
+  container_access_type               = "private"
+}
