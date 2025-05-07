@@ -5,7 +5,7 @@ locals{
     winterlistofsports=["icehockey","snowboarding","iceskating"]
     total_output = ["150", "150", "150"]
     characters = ["luke", "yoda", "darth"]
-}
-   bestrestaurants=["timeoutmarket","lecarre","iledefrance"]
+bestrestaurants=["timeoutmarket","lecarre","iledefrance"]
   total_output = ["150", "150", "150"]
   }
+
