@@ -17,7 +17,7 @@ variable "storage_account_name" {
 
 variable "account_tier"{
   type=string
-  default="premium"
+  default="Premium"
 }
 
 variable "account_replication_type"{
