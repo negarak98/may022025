@@ -6,6 +6,6 @@ resource "azurerm_storage_account" "mcitstoragemay" {
   account_replication_type = var.account_replication_type
 
   tags = {
-      enviromont = "dev"
+      enviromont = "production"
   }
 }
