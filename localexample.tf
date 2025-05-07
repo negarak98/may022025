@@ -8,4 +8,4 @@ locals{
 }
    bestrestaurants=["timeoutmarket","lecarre","iledefrance"]
   total_output = ["150", "150", "150"]
-  
+  }
