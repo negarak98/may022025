@@ -3,6 +3,7 @@ locals{
   forum= "negarakmcit"
   lengthsa=length(local.servicename)
     winterlistofsports=["icehockey","snowboarding","iceskating"]
+    bestrestaurants=["lafrance","mcdonald","kingburger"]
     total_output = ["150", "150", "150"]
     characters = ["luke", "yoda", "darth"]
     enemies_destroyed = [4252, 900, 20000056894]
