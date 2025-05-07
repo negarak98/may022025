@@ -1,5 +1,5 @@
 resource "azurerm_storage_account" "mcitstoragemay" {
-  name                     = var.negarstorageaccount
+  name                     = var.mcitstoragemay
   resource_group_name      = azurerm_resource_group.terraformmay022025.name
   location                 = azurerm_resource_group.terraformmay022025.location
   account_tier             = var.account_tier
