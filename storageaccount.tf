@@ -8,4 +8,4 @@ resource "azurerm_storage_account" "mcitstoragemay" {
   tags = {
       enviromont = var.enviroment
   }
-
+}
