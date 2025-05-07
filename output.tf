@@ -12,3 +12,6 @@ output "print"{
 output "wintersportslist"{
   value=[for sport in local.winterlistofsports:sport]
 }
+output "total_output"{
+  value=[for sport in local.total_output:sport]
+}
