@@ -8,3 +8,7 @@ output "print"{
   output "lengthsa"{
   value=local.lengthsa
   }
+
+output "wintersportslist"{
+  value=[for sport in local.winterlistofsports:sport]
+}
