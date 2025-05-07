@@ -16,6 +16,6 @@ output "total_output"{
   value=[for sport in local.total_output:sport]
 }
 output "characters"{
-  value=[for sport in characters:sport]
+  value=[for sport in local.characters:sport]
 }
   
