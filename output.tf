@@ -22,7 +22,7 @@ output "bestrestaurants"{
   value=[for food in local.bestrestaurants:food]
 }
 output "top3_food"{
-  value= local.top3_food
+  value= local.bestrestaurants
 }
 
 output "total_sum" {
