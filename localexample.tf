@@ -3,13 +3,17 @@ locals{
   forum= "negarakmcit"
   lengthsa=length(local.servicename)
     winterlistofsports=["icehockey","snowboarding","iceskating"]
-    bestrestaurants=["lafrance","mcdonald","kingburger"]
     total_output = ["150", "150", "150"]
     characters = ["luke", "yoda", "darth"]
     enemies_destroyed = [4252, 900, 20000056894]
     character_enemy_map =   { for character in local.characters: # Convert character list to a set
       character => local.enemies_destroyed
 }
-  
+bestrestaurants=["lafrance","mcdonald","kingburger"]
+    top3_food=["steak"."burger","pizza"]
+
+character_food_top3= {for character in local.characters: # Convert character list to a set
+      character =>
+  local.top3_food
   }
 
