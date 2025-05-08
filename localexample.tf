@@ -13,7 +13,7 @@ bestrestaurants=["lafrance","mcdonald","kingburger"]
     top3_food=["steak","burger","pizza"]
 
 
-character_food_top3= {for character in local.characters: # Convert character list to a set
+character_food_map= {for character in local.characters: # Convert character list to a set
       character =>
   local.top3_food
   }
