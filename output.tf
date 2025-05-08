@@ -19,9 +19,10 @@ output "characters"{
   value=[for sport in local.characters:sport]
 }
 output "bestrestaurants"{
-  value=[for food in local.bestrestaurants]
+  value=[for food in local.bestrestaurants:food]
 }
-
+output "top3_food"{
+  value=[for food in local.
 
 output "total_sum" {
   value = sum([for total in local.total_output : tonumber(total)])
