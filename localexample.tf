@@ -10,7 +10,7 @@ locals{
       character => local.enemies_destroyed
 }
 bestrestaurants=["lafrance","mcdonald","kingburger"]
-    top3_food=["steak"."burger","pizza"]
+    top3_food=["steak","burger","pizza"]
 
 character_food_top3= {for character in local.characters: # Convert character list to a set
       character =>
