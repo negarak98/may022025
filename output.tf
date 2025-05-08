@@ -22,7 +22,8 @@ output "bestrestaurants"{
   value=[for food in local.bestrestaurants:food]
 }
 output "top3_food"{
-  value=[for food in local.
+  value= local.top3_food
+}
 
 output "total_sum" {
   value = sum([for total in local.total_output : tonumber(total)])
