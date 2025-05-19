@@ -30,5 +30,9 @@ variable "environment"{
   default="prod"
 }
 
-
+variable "quote" {
+  type        = string
+  description = "City quote for string manipulation"
+  default     = "Montreal: Where potholes have their own zip code."
+}
 
