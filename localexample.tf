@@ -55,3 +55,4 @@ locals {
 
   # 10. Add a Suffix to the Quote
   branded_quote = "${local.quote} #TrueStory"
+}
