@@ -19,6 +19,16 @@ character_food_map= {for character in local.bestrestaurants: # Convert character
   }
 }
 
+
+
+locals{
+  sentence_1 = "Montreal bagels taste better at 3am"
+}
+locals{
+  sentec_1_split = split("", "Montreal bagels taste better at 3am.")
+}
+
+
 locals{
   reverse_sentence_1  = join("", reverse(split("", "Montreal bagels taste better at 3am.")))
   last_word_2         = element(split(" ", "Poutine should be a food group.") , length(split(" ", "poutine should be a good group.")) -1)
