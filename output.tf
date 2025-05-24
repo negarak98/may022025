@@ -33,11 +33,14 @@ output "character_enemy_output" {
 }
 
 
-output "sentence_1"{
+output "sentence_1" {
   value = local.sentence_1
 }
 
-output "
+output "sentec_1_split" {
+  value = loacl.sentec_1_split
+}
+
 
 
 
