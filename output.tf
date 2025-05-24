@@ -44,10 +44,13 @@ output "sentence_1_lenght" {
   value = length(split(" " , local.sentence_1))
 }
 
+output "sentence_1_reverse" {
+  value = reverse(split(" ", local.sentence_1))
+}
 
 
   output "reverse_sentence_1" {
-    value = join("", reverse(split("", local.sentence_1)))
+    value = join(" ", reverse(split(" ", local.sentence_1)))
 }
 
   output "last_word_2" {
