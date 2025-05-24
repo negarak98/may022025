@@ -38,7 +38,7 @@ output "sentence_1" {
 }
 
 output "sentec_1_split" {
-  value = loacl.sentec_1_split
+  value = local.sentec_1_split
 }
 
 
