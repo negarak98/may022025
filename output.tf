@@ -38,3 +38,7 @@ output "character_enemy_output" {
   output "reverse_sentence_1" {
     value = local.reverse_sentence_1
 }
+
+  output "last_word_2" {
+    value = local.last_word_2
+}
