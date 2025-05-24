@@ -29,15 +29,14 @@ locals{
 }
 
 locals{
-  sentence_1_lenght = length(split(" " , "Montreal bagels taste better at 3am"))
+  sentence_1_lenght = length(split(" " , "Montreal bagels taste better at 3am."))
 }
 locals{
   sentence_1_reverse  = reverse(split(" ", "Montreal bagels taste better at 3am."))
 }
 
 locals{
-  reverse_sentence_1  = join("", reverse(split("", "Montreal bagels taste better at 3am.")))
-  last_word_2         = element(split(" ", "Poutine should be a food group.") , length(split(" ", "poutine should be a good group.")) -1)
+  last_word_2         = element(split(" ", "Montreal bagels taste better at 3am.") , length(split(" ", "Montreal bagels taste better at 3am.")) -1)
 }
 
 
