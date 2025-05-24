@@ -49,5 +49,6 @@ output "string_manipulations" {
 }
 
 
-  output "reverse_sentence_1" (
+  output "reverse_sentence_1" {
     value = local.reverse_sentence_1
+}
