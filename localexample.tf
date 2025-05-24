@@ -28,6 +28,9 @@ locals{
   sentence_1_split = split(" ", "Montreal bagels taste better at 3am.")
 }
 
+locals{
+  sentence_1_lenght = lenght(split(" " , "Montreal bagels taste better at 3am")
+}
 
 locals{
   reverse_sentence_1  = join("", reverse(split("", "Montreal bagels taste better at 3am.")))
