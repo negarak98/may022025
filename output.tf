@@ -47,7 +47,7 @@ output "sentence_1_lenght" {
 
 
   output "reverse_sentence_1" {
-    value = local.reverse_sentence_1
+    value = join("", reverse(split("", local.sentence_1)))
 }
 
   output "last_word_2" {
