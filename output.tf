@@ -47,3 +47,7 @@ output "string_manipulations" {
     with_suffix    = local.branded_quote
   }
 }
+
+
+  output "reverse_sentence_1" (
+    value = local.reverse_sentence_1
