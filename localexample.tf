@@ -29,7 +29,7 @@ locals{
 }
 
 locals{
-  sentence_1_lenght = lenght(split(" " , "Montreal bagels taste better at 3am")
+  sentence_1_lenght = lenght(split(" " , "Montreal bagels taste better at 3am"))
 }
 
 locals{
