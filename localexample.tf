@@ -25,7 +25,7 @@ locals{
   sentence_1 = "Montreal bagels taste better at 3am"
 }
 locals{
-  sentec_1_split = split("", "Montreal bagels taste better at 3am.")
+  sentec_1_split = split(" , ", "Montreal bagels taste better at 3am.")
 }
 
 
