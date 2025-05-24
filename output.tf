@@ -40,7 +40,9 @@ output "sentence_1" {
 output "sentec_1_split" {
   value = local.sentence_1_split
 }
-
+output "sentence_1_lenght" {
+  value = lenght (split (" " , local.sentence_1_lenght))
+}
 
 
 
