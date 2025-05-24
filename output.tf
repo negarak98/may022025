@@ -33,6 +33,12 @@ output "character_enemy_output" {
 }
 
 
+output "sentence_1"{
+  value = local.sentence_1
+}
+
+output "
+
 
 
   output "reverse_sentence_1" {
