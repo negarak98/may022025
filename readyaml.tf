@@ -13,7 +13,7 @@ locals {
 
 #extract app info from file #flatten is a function that turns a list of lists into one list.
 
-  windows_app_list = flatten([ for app in local.windows_app : [ for linuxapp in try(app.listofwindowsapp,  []) : {
+  windows_app_list = flatten([ for app in local.windows_app : [ for windowsapp in try(app.listofwindowsapp,  []) : {
   name     = windowsapp.name
   os_type  = windowsapp.os_type
   sku_name = windowsapp.sku_name
