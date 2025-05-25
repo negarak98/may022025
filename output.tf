@@ -60,3 +60,9 @@ output "sentence_1_reverse" {
   output "name__of_project" {
   value = local.alltogether
 }
+
+
+
+output "full_service_names" {
+  value = local.full_service_names
+}
