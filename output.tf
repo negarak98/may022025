@@ -67,6 +67,6 @@ output "full_service_names" {
   value = local.full_service_names
 }
 
-output "env_service_map" (
+output "env_service_map" {
 value = local.env_service_map
 }
