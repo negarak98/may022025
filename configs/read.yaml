@@ -1,7 +1,7 @@
 listoflinuxapp:
-  - name: myfirstmachine   
-    os_type: Linux
-    sku_name: P1v2
-  - name: mysecondmachine 
-    os_type: Linux
-    sku_name: P1v2
+  - name: firstwindowsapp     
+    os_type: windows
+    sku_name: P5mv3
+  - name: secondwindowsapp
+    os_type: windows
+    sku_name: P5mv3
