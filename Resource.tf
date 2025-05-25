@@ -13,7 +13,7 @@ resource "azurerm_service_plan" "mcitdevrm" {
   sku_name            = each.value.sku_name
 }
 
-resource "azurerm_linux_web_app" "mcitdevrm" {
+resource "azurerm_windows_web_app" "mcitdevrm" {
   for_each            = azurerm_service_plan.mcitdevrm
   name                = each.value.name
   resource_group_name = azurerm_resource_group.negarresource.name
