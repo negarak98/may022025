@@ -5,7 +5,7 @@ locals {
 
 #read and decode each YAML file
   windows_app = { 
-    for windowsapp in local.linux_app_files :
+    for windowsapp in local.windows_app_files :
    f => yamldecode(file("${path.module}/configs/${f}"))
 #means read YAML text(file) and turns into data that terraform can use(yamldecode)
 }
