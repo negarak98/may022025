@@ -49,6 +49,20 @@ locals{
 }
 
 
+variable "servicename1" {
+  default = "projects"
+}
+
+
+variable "environments" {  
+default = ["dev" , "qa" , "stage" , "prod" ]
+}
+
+locals{
+full_service_names ={
+  for env in var.environments " env => "${env}${var.servicename1}
+
+
 
 
 
