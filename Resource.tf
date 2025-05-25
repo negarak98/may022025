@@ -14,7 +14,7 @@ resource "azurerm_service_plan" "azureresourcegroup" {
 }
 
 resource "azurerm_linux_web_app" "azureresourcegroupwebapp" {
-  for_each            = azurerm_service_plan.batcha06sp
+  for_each            = azurerm_service_plan.azureresourcegroup
   name                = each.value.name
   resource_group_name = azurerm_resource_group.azureresourcegroup.name
   location            = azurerm_resource_group.azureresourcegroup.location
