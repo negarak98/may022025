@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "negarresource"{
-  name  = "mcit_resource_group_may022025"
+  name  = "negarresource"
   location="canadacentral"
   }
 
