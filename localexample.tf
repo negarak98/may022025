@@ -61,6 +61,7 @@ default = ["dev" , "qa" , "stage" , "prod" ]
 locals{
 full_service_names ={
   for env in var.environments " env => "${env}${var.servicename1}
+}
 
 
 
