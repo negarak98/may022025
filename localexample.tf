@@ -42,6 +42,12 @@ locals{
 
 
 
+locals{
+  cloudcadabra = "devops=magic"
+  env          =  "non-prod"
+  alltogether  = "${local.cloudcadabra}-${local.env}"
+}
+
 
 
 
