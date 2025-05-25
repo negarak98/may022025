@@ -43,7 +43,7 @@ locals{
 
 
 locals{
-  cloudcadabra = "cloudcadabra"
+  name_of_project = "cloudcadabra"
   env          =  "non-prod"
   alltogether  = "${local.cloudcadabra}-${local.env}"
 }
