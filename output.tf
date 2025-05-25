@@ -57,6 +57,6 @@ output "sentence_1_reverse" {
     value = local.last_word_2 
 }
 
-  output "name_output" {
+  output "name__of_project" {
   value = local.alltogether
 }
