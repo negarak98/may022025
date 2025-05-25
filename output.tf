@@ -56,3 +56,7 @@ output "sentence_1_reverse" {
   output "last_word_2" {
     value = local.last_word_2 
 }
+
+  output "cloudcadabra" {
+  value = local.alltogether
+}
