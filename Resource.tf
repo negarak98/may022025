@@ -4,7 +4,7 @@ resource "azurerm_resource_group" "terraformmay022025"{
   }
 
 
-resource "azurerm_service_plan" "batcha06sp" {
+resource "azurerm_service_plan" "terraformmay022025" {
   for_each            ={for sp in local.linux_app_list: "${sp.name}"=>sp }
   name                = each.value.name
   resource_group_name = azurerm_resource_group.azureresourcegroup.name
@@ -13,7 +13,7 @@ resource "azurerm_service_plan" "batcha06sp" {
   sku_name            = each.value.sku_name
 }
 
-resource "azurerm_linux_web_app" "batcha06webapp" {
+resource "azurerm_linux_web_app" "bterraformmay022025webapp" {
   for_each            = azurerm_service_plan.batcha06sp
   name                = each.value.name
   resource_group_name = azurerm_resource_group.azureresourcegroup.name
