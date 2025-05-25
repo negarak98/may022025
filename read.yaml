@@ -1,8 +1,1 @@
 
-listoflinuxapp:
-  - name: myfirstmachine   
-    os_type: Linux
-    sku_name: P1v2
-  - name: mysecondmachine 
-    os_type: Linux
-    sku_name: P1v2
