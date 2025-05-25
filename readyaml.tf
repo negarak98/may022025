@@ -22,7 +22,7 @@ locals {
   sku_name = linuxapp.sku_name
 }
 ]
+
 ])
-}
 
   
