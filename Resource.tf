@@ -14,7 +14,7 @@ resource "azurerm_service_plan" "mcitdevrm" {
 }
 
 resource "azurerm_linux_web_app" "mcitdevrm" {
-  for_each            = azurerm_service_plan.azureresourcegroup
+  for_each            = azurerm_service_plan.mcitdevrm
   name                = each.value.name
   resource_group_name = azurerm_resource_group.mcitdevrm.name
   location            = azurerm_resource_group.mcitdevrm.location
