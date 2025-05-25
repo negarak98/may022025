@@ -1,12 +1,12 @@
 locals {  
 # get list of YAML files in the CONFIGS folder 
-  windows_app_files = fileset("${path.module}/configs" , "[^_]*.yaml")
+  windows_app_files = fileset("${path.module}/winddowsyaml" , "[^_]*.yaml")
 
 
 #read and decode each YAML file
   windows_app = { 
     for windowsapp in local.windows_app_files :
-   windowsapp => yamldecode(file("${path.module}/configs/${windowsapp}"))
+   windowsapp => yamldecode(file("${path.module}/winddowsyaml/${windowsapp}"))
 #means read YAML text(file) and turns into data that terraform can use(yamldecode)
 }
 
