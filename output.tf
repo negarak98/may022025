@@ -66,3 +66,7 @@ output "sentence_1_reverse" {
 output "full_service_names" {
   value = local.full_service_names
 }
+
+output "env_service_map" (
+value = local.env_service_map
+}
