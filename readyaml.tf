@@ -11,7 +11,7 @@ locals {
 #means read YAML text(file) and turns into data that terraform can use(yamldecode)
 }
 
-locals{
+locals {
 #extract app info from file #flatten is a function that turns a list of lists into one list.
 
   linux_app_list = flatten([ for app in local.linux_app_data : [ for linuxapp in try(app/listoflinuxapp,  [] : {
