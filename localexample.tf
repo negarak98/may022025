@@ -66,7 +66,13 @@ full_service_names ={
 
 
 
+variable "servicename2" {
+  default = ["montreal" , "toronto" , "calgary" , "ottawa" ]
+  }
 
+locals{
+  env_service_map = zipmap(var.environments, var.servicename2)
+}
 
 
 
