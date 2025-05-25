@@ -19,6 +19,7 @@ locals {
   os_type  = linuxapp.os_type
   sku_name = linuxapp.sku_name
 }
+}
 ]
 
 ])
