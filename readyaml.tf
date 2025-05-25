@@ -1,7 +1,6 @@
 locals {  
 # get list of YAML files in the CONFIGS folder 
   linux_app_files = fileset("${path.module}/configs" , "[^_]*.yaml")
-}
 
 
 
