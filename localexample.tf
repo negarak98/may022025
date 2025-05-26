@@ -1,3 +1,5 @@
+
+
 locals{
   servicename= "negarak"
   forum= "negarakmcit"
@@ -103,3 +105,10 @@ locals {
 
   us_regions = [for r in local.regions : r if can(regex("us", r))]
 }
+
+
+locals {
+  apps = ["api", "frontend", "worker", "db"]
+}
+
+
