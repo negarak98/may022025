@@ -76,7 +76,9 @@ locals{
 
 
 
-
+locals {
+  names = ["eastus", "westeurope", "centralindia"]
+}
 
 
 
