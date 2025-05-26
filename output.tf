@@ -70,3 +70,7 @@ output "full_service_names" {
 output "env_service_map" {
 value = local.env_service_map
 }
+
+output "uppercase_regions" {
+  value = local.upper_names
+}
