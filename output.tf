@@ -91,3 +91,8 @@ output "us_regions" {
 output "app_count" {
   value = length(local.apps)
 }
+
+
+output "cidrs" {
+  value =local.cidrs
+}
