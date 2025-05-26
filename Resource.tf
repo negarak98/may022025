@@ -33,3 +33,10 @@ locals {
   # Transformed list: all names in uppercase
   upper_names = [for name in local.names : upper(name)]
 }
+
+resource "azurerm_resource_group" "example" {
+  for_each = toset(local.rg_names)
+
+  name     = each.value
+  location = "eastus"  # You can change this to any Azure region
+}
