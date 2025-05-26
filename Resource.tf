@@ -53,27 +53,27 @@ locals {
 }
 
 
-resource "azurerm_resource_group" "example" {
+resource "azurerm_resource_group" "negarak1" {
   name     = "example-resources"
   location = "West Europe"
 }
 
-resource "azurerm_virtual_network" "example" {
+resource "azurerm_virtual_network" "negarak1" {
   name                = "example-vnet"
   address_space       = ["10.0.0.0/16"]
-  location            = azurerm_resource_group.example.location
-  resource_group_name = azurerm_resource_group.example.name
+  location            = azurerm_resource_group.negarak1.location
+  resource_group_name = azurerm_resource_group.negarak1.name
 }
 
 
 
 
-resource "azurerm_subnet" "example" {
+resource "azurerm_subnet" "negarak1" {
   for_each = { for index, cidr in local.cidrs : "subnet-${index + 1}" => cidr }
 
   name                 = each.key
-  resource_group_name  = azurerm_resource_group.example.name
-  virtual_network_name = azurerm_virtual_network.example.name
+  resource_group_name  = azurerm_resource_group.negarak1.name
+  virtual_network_name = azurerm_virtual_network.negarak1.name
   address_prefixes     = [each.value]
 
   delegation {
