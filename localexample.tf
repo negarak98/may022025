@@ -94,3 +94,12 @@ locals {
 locals {
   rg_names = ["dev-rg", "test-rg", "prod-rg"]
 }
+
+
+
+
+locals {
+  regions    = ["eastus", "westeurope", "southindia", "centralus"]
+
+  us_regions = [for r in local.regions : r if contains(r, "us")]
+}
