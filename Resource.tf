@@ -53,12 +53,12 @@ locals {
 }
 
 
-resource "azurerm_subnet" "subnet1" {
+resource "azurerm_subnet" "example" {
   for_each = { for index, cidr in local.cidrs : "subnet-${index + 1}" => cidr }
 
   name                 = each.key
-  resource_group_name  = azurerm_resource_group.subnet1.name
-  virtual_network_name = azurerm_virtual_network.subnet1.name
+  resource_group_name  = azurerm_resource_group.example.name
+  virtual_network_name = azurerm_virtual_network.example.name
   address_prefixes     = [each.value]
 
   delegation {
