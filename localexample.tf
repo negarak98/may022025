@@ -81,13 +81,11 @@ locals {
   upper_regions    = [for region in local.original_regions : upper(region)]
 }
 
-
-
 locals {
   vms = ["vm1", "vm2", "vm3"]
 
-  vms_map = zipmap(
-    range(length(local.vms)),
-    local.vms
-  )
+  vms_map = {
+    for i, vm in local.vms :
+    i => vm
+  }
 }
