@@ -77,9 +77,8 @@ locals{
 
 
 locals {
-  names = ["eastus", "westeurope", "centralindia"]
+  names        = ["eastus", "westeurope", "centralindia"]
+  upper_names  = [for name in local.names : upper(name)]
 }
-
-
 
 
