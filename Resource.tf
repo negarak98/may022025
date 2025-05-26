@@ -40,3 +40,14 @@ resource "azurerm_resource_group" "example" {
   name     = each.value
   location = "eastus"  # You can change this to any Azure region
 }
+
+
+locals {
+  keys   = ["env", "team", "owner"]
+  values = ["prod", "devops", "alice"]
+
+  combined_map = {
+    for i in [0,1,2] :
+    local.keys[i] => local.values[i]
+  }
+}
