@@ -83,3 +83,7 @@ output "uppercase_regions" {
 output "combined_map" {
   value = local.combined_map
 }
+
+output "us_regions" {
+  value = local.us_regions
+}
