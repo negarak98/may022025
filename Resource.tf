@@ -34,7 +34,7 @@ locals {
   upper_names = [for name in local.names : upper(name)]
 }
 
-resource "azurerm_resource_group" "example" {
+resource "azurerm_resource_group" "subnet1" {
   for_each = toset(local.rg_names)
 
   name     = each.value
