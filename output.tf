@@ -78,3 +78,8 @@ output "vms_map" {
 output "uppercase_regions" {
   value = local.upper_names
 }
+
+
+output "combined_map" {
+  value = local.combined_map
+}
