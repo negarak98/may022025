@@ -22,3 +22,13 @@ resource "azurerm_windows_web_app" "mcitdevrm" {
 
   site_config {}
 }
+
+
+
+
+resource "azurerm_resource_group" "regional_rg" {
+  for_each = toset(local.names)
+
+  name     = "rg-${each.value}"
+  location = each.value
+}
