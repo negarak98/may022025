@@ -26,9 +26,10 @@ resource "azurerm_windows_web_app" "mcitdevrm" {
 
 
 
-resource "azurerm_resource_group" "regional_rg" {
-  for_each = toset(local.names)
+locals {
+  # Original list of region names
+  names = ["eastus", "westeurope", "centralindia"]
 
-  name     = "rg-${each.value}"
-  location = each.value
+  # Transformed list: all names in uppercase
+  upper_names = [for name in local.names : upper(name)]
 }
