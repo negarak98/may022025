@@ -71,6 +71,10 @@ output "env_service_map" {
 value = local.env_service_map
 }
 
+output "vms_map" {
+  value = local.vms_map
+}
+
 output "uppercase_regions" {
   value = local.upper_names
 }
