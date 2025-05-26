@@ -89,3 +89,8 @@ locals {
     i => vm
   }
 }
+
+
+locals {
+  rg_names = ["dev-rg", "test-rg", "prod-rg"]
+}
