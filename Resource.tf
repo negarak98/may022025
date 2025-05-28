@@ -88,3 +88,18 @@ resource "azurerm_subnet" "negarak1" {
     }
   }
 }
+
+
+resource "azurerm_subnet" "subnets" {
+  for_each = local.subnets
+
+  name                 = each.key
+  address_prefixes     = [each.value]
+  resource_group_name  = azurerm_resource_group.subnets.name
+  virtual_network_name = azurerm_virtual_network.subnets.name
+}
+
+
+
+
+
