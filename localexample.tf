@@ -117,7 +117,7 @@ locals {
 }
 
 locals {
-  subnet_data = yamldecode(file("${path.module}/subnet.yaml"))
+  subnet_data = yamldecode(file("${path.module}/subnets/subnet.yaml"))
   subnets     = local.subnet_data.subnets
 }
 
