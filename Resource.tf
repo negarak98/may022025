@@ -89,14 +89,29 @@ resource "azurerm_subnet" "negarak1" {
   }
 }
 
+resource "azurerm_resource_group" "negarak22" {
+  name     = "negarak22-resources"
+  location = "West Europe"
+}
+
+
+resource "azurerm_virtual_network" "networks" {
+  name                = "negarak22-vnet"
+  address_space       = ["10.0.0.0/16"]
+  location            = azurerm_resource_group.enegarak22.location
+  resource_group_name = azurerm_resource_group.negarak22.name
+}
+
+
+
 
 resource "azurerm_subnet" "subnets" {
   for_each = local.subnets
 
   name                 = each.key
   address_prefixes     = [each.value]
-  resource_group_name  = azurerm_resource_group.subnets.name
-  virtual_network_name = azurerm_virtual_network.subnets.name
+  resource_group_name  = azurerm_resource_group.negarak22.name
+  virtual_network_name = azurerm_virtual_network.negarak22.name
 }
 
 
