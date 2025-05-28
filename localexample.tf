@@ -124,8 +124,10 @@ locals {
 
 
 locals {
-  region       = "eastus"
-  is_primary   = local.region == "westus" ? true : false
+  region       = "eastus" 
+  another_region = "westus"
+  is_primary   = local.region==local.another_region  ? true : false
+  
   environment  = local.is_primary ? "production" : "staging"
 }
 
