@@ -98,7 +98,7 @@ resource "azurerm_resource_group" "negarak22" {
 resource "azurerm_virtual_network" "networks" {
   name                = "negarak22-vnet"
   address_space       = ["10.0.0.0/16"]
-  location            = azurerm_resource_group.enegarak22.location
+  location            = azurerm_resource_group.negarak22.location
   resource_group_name = azurerm_resource_group.negarak22.name
 }
 
